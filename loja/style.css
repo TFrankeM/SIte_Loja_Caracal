@@ -1,0 +1,117 @@
+*{
+    margin:0; /*Deixa todo conteúdo colado nos cantos*/
+    padding:0; /*Deixa todo conteúdo sem preenchimento inicialmente*/  
+    font-family: 'Lato', sans-serif; /*troca a fonte do site*/
+} 
+
+header{
+    background-color: #000000; 
+    opacity: 90%;
+    padding: 20px 0; /*preenchimento: top e bottom: 10px; right e leff:0px*/
+    position: fixed; /*deixar o header fixo ao rolar a página*/
+    width: 100%; /*ocupar toda a largura disponível*/
+    height: 40px; /*altura do header*/
+}
+
+#menu{
+    display: flex; /*Exibe os elementos como um contêiner flexível, para que todos fiquem um ao lado do outro*/
+    justify-content: space-around; /*Alinhar os itens flexíveis no centro do contêiner*/
+    align-items: center; /*align-items: Alinha os itens na vertical*/ 
+}				
+
+.logo_menu{
+    font-size: 24px; /*Tamanho da fonte*/
+    letter-spacing: 7px; /*Espaçamento entre as letras da palavra*/
+    text-decoration: none; /*Tirar a decoração de link*/
+    font-weight: bold;  /*Deixar a fonte em negrito*/
+    color:#98f5ff; /*Cor da fonte*/
+}
+
+nav li{
+    display: inline; /*deixa os itens do menu um ao lado do outro*/ 
+}
+
+.item_menu{
+    padding: 20px; /*Espaçamento entre os itens*/
+    text-decoration: none; /*Tirar a decoração de link*/
+    font-size: 18px; /*Tamanho da fonte*/
+    font-weight: bold; /*Deixar a fonte em negrito*/
+    color:#00BFFF /*Cor da fonte*/
+}
+.item_menu:hover{
+    color:#ffffff
+}
+
+#capa{
+    width: 100%; /*toda largura da página*/
+    height: 50%; /*metade da página como altura*/
+}
+
+.titulo-centralizado{
+	text-align: center;
+}
+
+p{
+	text-align: center;
+    margin:30px 0
+}
+
+.img_vitrine{
+    width: 200px;
+    height: 200px;
+}
+
+.produtos {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 50px auto;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+    height: 500px;
+	vertical-align: top;
+	margin: 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 3px solid #000000;
+	border-radius: 20px;
+}
+
+.produtos li:hover {
+	border-color: #036ffd;
+}
+
+.produtos h2 {
+	font-size: 25px;
+	font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.produto-descricao {
+	font-size: 18px;
+    padding-bottom: 50px
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+#sobre{
+    background: #c3f3f8;
+    margin: 50px 100px;
+	padding: 30px 100px;
+    text-align: center;
+}
+
+#missao {
+	font-size: 20px;
+}
+
+em strong{
+	color: red;
+}
