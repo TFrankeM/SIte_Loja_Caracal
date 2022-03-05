@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <!-- Teste A1 -->
-<!-- Loja de -->
-<!-- Integrantes do grupo: Fabrício Venturim, -->
+<!-- Loja de artigos esportivos -->
+<!-- Integrantes do grupo: Fabrício Venturim, Rodrigo Prieto, -->
 
 <html lang="pt-br">
 	<head> 
 		<meta charset="UTF-8">
-		<title>Nome da loja - HOME</title> <!--Aquele nome na aba do navegador-->
-		<meta name="descripton" content="">
-		<meta name="keywords" content="">
-		<meta name="author" content="">
+		<title>CARACAL - HOME</title> <!--Aquele nome na aba do navegador-->
+		<meta name="descripton" content=""> <!--Não sei o que colocar aqui-->
+		<meta name="keywords" content=""> <!--Não sei o que colocar aqui-->
+		<meta name="author" content=""> 
 		<link rel="icon" type="image/x-icon" href="img/caracalfavicon.png"> <!--favicon-->
 		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext'  > <!--Adiciona uma fonte, no caso a "lato"--> 
-        <link rel="stylesheet" type="text/css" href="style.css">
-		
+        <link rel="stylesheet" type="text/css" href="style.css"> <!--arquivo css-->
 	</head>
-	<body>					
+	<body>
 		<header> 
-			<nav id="menu">
+			<nav id="menu"> <!--Aqui começa o html do MENU-->
 				<a href="index.html"><img class="logo_menu" src="img/logocaracal.png" alt="Logo Caracal"></a>
 				<ul>
 					<li>
-						<a class="item_menu"  href="index.html"> HOME </a>
+						<a class="item_menu" href="index.html">HOME</a>
 					</li>
 					<li>
 						<a class="item_menu" href="equipe.html">EQUIPE</a>
@@ -30,16 +29,15 @@
 						<a class="item_menu" href="contato.html">FALE CONOSCO</a>
 					</li>
 				</ul>
-			</nav>
+			</nav> <!--Aqui termina o html do MENU-->
 		</header>
-		<img id="capa" src="img/capa.jpg" alt="capa">
-
-		<div>	<!--- DESTAQUES  -->
+		<img id="capa" src="img/capa.jpg" alt="capa"> <!--Imagem do início da pagina-->
+		<section>	<!--Aqui começa o html do DESTAQUES -->
 			<h1 class="titulo-centralizado">Destaque</h1>
 			<nav>
-				<ul class="produtos">
+				<ul class="produtos"> <!--Cada <li></li> é um produto da vitrine-->
 					<li>
-						<a href="#"> 
+						<a href="#"> <!--Como ainda não temos uma página com cada item para vender, o # serve para fazer um link para a própria página-->
 						<h2>Futebol</h2>
 						<img class="img_vitrine" src="img/bola.png" alt="bola de futebol">
 						<p class="produto-descricao">Bola De Futebol adidas Telstar 18</p>
@@ -88,15 +86,15 @@
 					</li>
 				</ul>
 			</nav>
-		</div><!--- DESTAQUES-->
+		</section><!--Aqui termina o html do DESTAQUES -->
 		
-		<div><!---O QUE VOCÊ DESEJA COMPRA?-->
+		<section><!--Aqui começa o html do O QUE VOCÊ DESEJA COMPRA?-->
 			<h1 class="titulo-centralizado">O que você deseja comprar?</h1>
 			<nav>	
-				<ul class="categorias">
-					<li>
-						<a href="#"> 
-						<img class="img-categorias" src="img/equipamentos.png" alt="equipamentos">
+				<ul class="categorias"> <!--Cada <li></li> é uma categoria-->
+					<li> 
+						<a href="#">  <!--Como ainda não temos uma página com os produtos de cada categoria, o # serve para fazer um link para a própria página-->
+						<img class="img-categorias" src="img/equipamentos.png" alt="equipamentos"> <!--Não sei se é roubo usar uma imagem pronta com todo o desing das categorias kkkk-->
 						</a>
 					</li>
 					<li>
@@ -111,11 +109,11 @@
 					</li>
 				</ul>
 			</nav>
-		</div><!---O QUE VOCÊ DESEJA COMPRA?-->
+		</section><!--Aqui termina o html do O QUE VOCÊ DESEJA COMPRA?-->
 
-		<div id="sobre">	
+		<section id="sobre"> <!--Aqui começa o html do SOBRE-->	
 			<img id="img-sobre" src="img/esporte-sobre.jpg" alt="sobre">
-			<div id="texto-sobre">
+			<div id="texto-sobre"> 
 				<h2 class="titulo-centralizado">Sobre nós</h2>
 				<p>Localizada no coração dos brasileiros, a <strong>CARACAL</strong> traz para o mercado o que há de melhor para a prática de esportes. Fundada em 1997, a <strong>CARACAL</strong> já é destaque no mundo e conquista novos clientes a cada dia.</p>
 
@@ -123,26 +121,27 @@
 				
 				<p>Oferecemos produtos profissionais desenvolvidos de acordo com as principais mudanças tecnológicas. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
 			</div>
-		</div>
+		</section> <!--Aqui termina o html do SOBRE-->
 
 		<!--RODAPÉ-->
 
-		<footer>
+		<footer> <!--Aqui começa o html do SOBRE-->		
 			<div class="rodape">
-				<ul class="rodape-colunas" >
+				<ul class="rodape-colunas"> <!--Cada <li></li> é uma "coluna"-->
 					<li class="rodape-item"><h3>Caracal</h3>
-					<p>Empresa competente, sempre em busca de melhorar os nossos serviços e satisfazer os nossos clientes com trabalho e prestação de serviço</p>
+						<p>Empresa competente, sempre em busca de melhorar os nossos serviços e satisfazer os nossos clientes com trabalho e prestação de serviço</p>
 					</li>
 					<li class="rodape-item"><h3>Contato</h3>
-						<a href="#"><img class="redes" src="img/facebook.png"></a>
+						<a href="#"><img class="redes" src="img/facebook.png"></a> <!--A ideia era, ao clicar em cada imagem, ir para a rede social em questão, mas como não criamos conta em nenhuma rede, fica só de infeite mesmo-->
 						<a href="#"><img class="redes" src="img/instagram.png"></a>
 						<a href="#"><img class="redes" src="img/whatsapp.png"></a>
+						<a href="contato.html"><img class="redes" src="img/email.png"></a>
 					</li>
 					<li class="rodape-item"><h3>Endereço</h3>
-						<p>bla bla bla bla bla bla bla bla bla bla bla 21</p>
+						<p>bla bla bla bla bla bla bla bla bla bla bla 21</p> <!--Alguém tem alguma ideia? kkkkkk-->
 					</li>
 				</ul>
 			</div>
-		</footer>
+		</footer> <!--Aqui termina o html do SOBRE-->	
 	</body>
 </html>

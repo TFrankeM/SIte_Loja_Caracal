@@ -1,15 +1,36 @@
+/*OBS*/
+/*Lembrando que o padding e o margin funcionam da seguinte maneira:
+padding: 25px 50px 75px 100px;
+    top padding is 25px
+    right padding is 50px
+    bottom padding is 75px
+    left padding is 100px
+
+padding: 25px 50px 75px;
+    top padding is 25px
+    right and left paddings are 50px
+    bottom padding is 75px
+
+padding: 25px 50px;
+    top and bottom paddings are 25px
+    right and left paddings are 50px
+
+padding: 25px;
+    all four paddings are 25px
+*/
+
 *{
     margin:0; /*Deixa todo conteúdo colado nos cantos*/
-    padding:0; /*Deixa todo conteúdo sem preenchimento inicialmente*/  
-    font-family: 'Lato', sans-serif; /*troca a fonte do site*/
+    padding:0; /*Deixa todo conteúdo sem preenchimento (espaçamento) inicialmente*/  
+    font-family: 'Lato', sans-serif; /*a fonte padrão do site, se alguém achar uma mais bonita, só falar*/
 } 
 
-/*MENU*/
+/*==========MENU==========*/
 
 header{
     background-color: #000000; /*cor de fundo do menu*/
     opacity: 90%; /*nível de transparência da cor de fundo do menu*/
-    padding: 20px 0; /*preenchimento: top e bottom: 10px; right e leff:0px*/
+    padding: 20px 0; /*preenchimento - top e bottom: 10px; right e leff:0px*/
     position: fixed; /*deixar o header fixo ao rolar a página*/
     width: 100%; /*ocupar toda a largura disponível*/
     height: 40px; /*altura do header*/
@@ -24,7 +45,6 @@ header{
 
 .logo_menu{
     width: 120px; /*largura da imagem*/
-    height: auto; /* fica automática a altura de acordo com a largura da imagem*/
 }
 
 nav li{
@@ -47,7 +67,7 @@ nav li{
     height: 50%; /*metade da página como altura*/
 }
 
-/*DESTAQUE*/
+/*==========DESTAQUE==========*/
 
 .titulo-centralizado{
     margin: 40px 0px 20px; /*margem de 40px no topo, 0px nos lados e 20px para baixo*/ 
@@ -88,95 +108,95 @@ li a {
 }
 
 .produtos li:hover {
-	border-color: #036ffd;
+	border-color: #036ffd; /*quando passar o mouse sobre os itens, a borda ficará azul*/
 }
 
 .produtos h2 {
-	font-size: 25px;
-	font-weight: bold;
-    margin-bottom: 20px;
+	font-size: 25px; /*mudando o padrão do tamanho da font*/
+	font-weight: bold; /*negrito*/
+    margin-bottom: 20px; /* Um espaçamento entre o título e a imagem do produto */
 }
 
 .produto-descricao {
-	font-size: 18px;
-    padding-bottom: 50px
+	font-size: 18px; /*mudando o padrão do tamanho da font*/
+    padding-bottom: 50px /*espaçamento entre a descrição e o preço*/
 }
 
 .produto-preco {
-	font-size: 22px;
-	font-weight: bold;
-	margin-top: 10px;
+	font-size: 22px; /*mudando o padrão do tamanho da font*/
+	font-weight: bold; /*negrito*/
+    color:rgb(212, 4, 4) /*cor do preço*/
 }
 
-/*O QUE VOCÊ DESEJA COMPRAR?*/ 
+/*==========O QUE VOCÊ DESEJA COMPRAR?==========*/ 
 
 .categorias{
-    text-align: center;
+    text-align: center; /*centraliza o conteúdo*/
 }
 
 .categorias li{
-    display:inline-block;
-    padding:0px 7px;
+    display:inline-block; /*deixa os itens um ao lado do outro(inline) e possibilita reajustar a altura(block)*/
+    padding:0px 7px; /*Espaçamento entre as três categorias*/
 
 }
 
 .img-categorias{
-    width: 400px;
-    box-sizing: border-box;
-	border: 3.2px solid #ffffff;
+    width: 400px; /*Largura da imagem, a altura fica proporcioal à largura*/
+    box-sizing: border-box; /*preenchimento e borda na largura e altura totais do elemento*/
+	border: 3.2px solid #ffffff; /*adicina uma borda, só que branca para não ser percebida*/
 }
 
 .img-categorias:hover{
-    border-color: #000000;
+    border-color: #000000; /*ao passar o mouse sobre a categoria, aí sim irá aparecer a borda*/
 }
 
-/*SOBRE*/
+/*==========SOBRE==========*/
 
 #sobre{
-    background: #c3f3f8;
-    margin-top: 40px;
+    background: #c3f3f8; /*cor de fundo*/
+    margin-top: 40px; /*espaçamento entre o "sobre" e "categoria"*/
     display: flex; /*Exibe os elementos como um contêiner flexível, para que todos fiquem um ao lado do outro*/
     justify-content: space-around; /*Alinhar os itens flexíveis no centro do contêiner*/
     align-items: center; /*align-items: Alinha os itens na vertical*/ 
 }
 
 #img-sobre{
-    float: left;
-    width: 50%;
+    float: left; /*deixa a imagem na esquerda*/
+    width: 50%; /*deixa a imagem na metade da tela*/
 }
 
 #texto-sobre{
-    padding: 0px 30px;
+    padding: 0px 30px; /*espaçamento para não deixar o texto colado com a imagem/canto da tela*/
 }
 
 #texto-sobre p{
-	text-align: center;
-    margin:30px 0
+	text-align: center; /* texto centralizado*/
+    margin:30px 0 /*espaçamento entre os parágrafos*/
 }
 
 #missao {
-	font-size: 20px;
+	font-size: 20px; /*aumento da fonte*/
 }
 
 em strong{
-	color: red;
+	color: red; /*quando houver uma tag <strong> dentro da tag <em>, o texto ficará vermelho*/
 }
 
-/* RODAPé */
+/*==========RODAPÉ==========*/
 
 .rodape{
-    width: 100%;
-    height: 150px;
-    background-color: #000000;
-    color: #ffffff;
+    width: 100%; /*rodapé oculpa toda a largura*/
+    height: 150px; /*altura do rodapé*/
+    background-color: #000000; /*cor de fundo do rodapé*/
+    color: #ffffff; /*cor do texto do rodapé*/
 }
 
 .rodape-colunas{    
-    width: 700px;
-    display:flex;
+    width: 700px; /*largura do bloco com as três "colunas" do rodapé*/
+    display:flex; /*deixa os itens um ao lado do outro*/
     justify-content: space-around; /*Alinhar os itens flexíveis no centro do contêiner*/
-    list-style: none;
-    text-align: center;
+    list-style: none; /*tira aquele pontinho de lista dos <li>*/
+    text-align: center; /*deixa os elementos centralizados*/
     padding: 15px 0px; /* espaçamento do topo do rodapé até o título dos itens */ 
     margin: 0 auto; /* não sei muito o pq, mas quando coloca margin auto para difeita e para esquerda ele centraliza*/
 }
@@ -186,16 +206,16 @@ em strong{
 }
 
 .rodape-item h3{
-    color:#00BFFF;
-    font-size: 18;
+    color:#00BFFF; /*cor dos títulos do rodapé*/
+    font-size: 18; /*tamanho da fonte dos títulos*/
     padding-bottom: 15px; /* espaçamento entre o título e o conteúdo dos itens*/
 }
 
 .rodape-item p {
-    font-size: 13px;
+    font-size: 13px; /*tamanho da fonte dos parágrafos*/
 }
 
 .redes{
-    width: 20px;
+    width: 20px; /*/*Largura da imagem, a altura fica proporcioal à largura*/
     padding: 0 5px; /* espaçamento entre os icones das redes sociais*/
 }
