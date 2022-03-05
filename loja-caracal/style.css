@@ -4,9 +4,11 @@
     font-family: 'Lato', sans-serif; /*troca a fonte do site*/
 } 
 
+/*MENU*/
+
 header{
-    background-color: #000000; 
-    opacity: 90%;
+    background-color: #000000; /*cor de fundo do menu*/
+    opacity: 90%; /*nível de transparência da cor de fundo do menu*/
     padding: 20px 0; /*preenchimento: top e bottom: 10px; right e leff:0px*/
     position: fixed; /*deixar o header fixo ao rolar a página*/
     width: 100%; /*ocupar toda a largura disponível*/
@@ -14,17 +16,15 @@ header{
 }
 
 #menu{
+    height: 40px; /*para ficar com a mesma altura do header e encaixar certinho a centralização*/
     display: flex; /*Exibe os elementos como um contêiner flexível, para que todos fiquem um ao lado do outro*/
     justify-content: space-around; /*Alinhar os itens flexíveis no centro do contêiner*/
     align-items: center; /*align-items: Alinha os itens na vertical*/ 
 }				
 
 .logo_menu{
-    font-size: 24px; /*Tamanho da fonte*/
-    letter-spacing: 7px; /*Espaçamento entre as letras da palavra*/
-    text-decoration: none; /*Tirar a decoração de link*/
-    font-weight: bold;  /*Deixar a fonte em negrito*/
-    color:#98f5ff; /*Cor da fonte*/
+    width: 120px; /*largura da imagem*/
+    height: auto; /* fica automática a altura de acordo com a largura da imagem*/
 }
 
 nav li{
@@ -39,7 +39,7 @@ nav li{
     color:#00BFFF /*Cor da fonte*/
 }
 .item_menu:hover{
-    color:#ffffff
+    color:#ffffff /*Ao passar o mouse em um item do menu, ele ficará branco*/
 }
 
 #capa{
@@ -47,37 +47,44 @@ nav li{
     height: 50%; /*metade da página como altura*/
 }
 
-.titulo-centralizado{
-	text-align: center;
-}
+/*DESTAQUE*/
 
-p{
-	text-align: center;
-    margin:30px 0
+.titulo-centralizado{
+    margin: 40px 0px 20px; /*margem de 40px no topo, 0px nos lados e 20px para baixo*/ 
+	text-align: center; /*deixa o título centralizado*/
+    text-transform: uppercase; /*deixa o título ASSIM*/
+    letter-spacing: 5px; /*leve espaçamento entre as letras do título*/   
+    font-weight: bold; /*negrito*/
+    font-style: italic; /*itálico*/
 }
 
 .img_vitrine{
-    width: 200px;
-    height: 200px;
+    width: 200px; 
+    height: 200px; /*deixa a imagem quadrada, 200x200px*/
+    padding: 30px 0; /* espaçamento entre a imagem e os textos*/
 }
 
 .produtos {
-	width: 1200px;
-	margin: 0 auto;
-	padding: 50px auto;
+	width: 1200px; /*as "caixas" de produtos terá 1200px de largura*/
+	margin: 0 auto; /*ao deixar as margens dos dois lados como auto, a parada fica centralizada  */
 }
 
-.produtos li {
-	display: inline-block;
-	text-align: center;
-	width: 30%;
-    height: 500px;
-	vertical-align: top;
-	margin: 1.5%;
-	padding: 30px 20px;
-	box-sizing: border-box;
-	border: 3px solid #000000;
-	border-radius: 20px;
+li a {
+    text-decoration: none; /*tira a decoração de link*/
+    color:#000000 /*como é um link, normalmente vem formatado com a cor azul, então isso muda a cor para preto*/
+}
+
+.produtos li { /*cada produto*/
+	display: inline-block; /*deixa os itens um ao lado do outro(inline) e possibilita reajustar a altura(block)*/
+	text-align: center; /*centraliza o texto e a imagem*/
+	width: 30%; /*largura de cada item*/
+    height: 500px; /*altura de cada item*/
+	vertical-align: top; /*alinhar todos os itens pelo topo do elemento mais alto da linha*/
+	margin: 1.5%; /* é a margem (espaçamento) de um item ao outro*/
+	padding: 15px 20px; /*espaçamento dentro da borda*/
+	box-sizing: border-box; /*preenchimento e borda na largura e altura totais do elemento*/
+	border: 3px solid #000000; /*o desenho da borda*/
+	border-radius: 20px; /*o arredondamento da borda*/
 }
 
 .produtos li:hover {
@@ -101,11 +108,50 @@ p{
 	margin-top: 10px;
 }
 
+/*O QUE VOCÊ DESEJA COMPRAR?*/ 
+
+.categorias{
+    text-align: center;
+}
+
+.categorias li{
+    display:inline-block;
+    padding:0px 7px;
+
+}
+
+.img-categorias{
+    width: 400px;
+    box-sizing: border-box;
+	border: 3.2px solid #ffffff;
+}
+
+.img-categorias:hover{
+    border-color: #000000;
+}
+
+/*SOBRE*/
+
 #sobre{
     background: #c3f3f8;
-    margin: 50px 100px;
-	padding: 30px 100px;
-    text-align: center;
+    margin-top: 40px;
+    display: flex; /*Exibe os elementos como um contêiner flexível, para que todos fiquem um ao lado do outro*/
+    justify-content: space-around; /*Alinhar os itens flexíveis no centro do contêiner*/
+    align-items: center; /*align-items: Alinha os itens na vertical*/ 
+}
+
+#img-sobre{
+    float: left;
+    width: 50%;
+}
+
+#texto-sobre{
+    padding: 0px 30px;
+}
+
+#texto-sobre p{
+	text-align: center;
+    margin:30px 0
 }
 
 #missao {
@@ -114,4 +160,42 @@ p{
 
 em strong{
 	color: red;
+}
+
+/* RODAPé */
+
+.rodape{
+    width: 100%;
+    height: 150px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.rodape-colunas{    
+    width: 700px;
+    display:flex;
+    justify-content: space-around; /*Alinhar os itens flexíveis no centro do contêiner*/
+    list-style: none;
+    text-align: center;
+    padding: 15px 0px; /* espaçamento do topo do rodapé até o título dos itens */ 
+    margin: 0 auto; /* não sei muito o pq, mas quando coloca margin auto para difeita e para esquerda ele centraliza*/
+}
+
+.rodape-item{
+    width: 200px; /* o comprimento de cada item do rodapé*/
+}
+
+.rodape-item h3{
+    color:#00BFFF;
+    font-size: 18;
+    padding-bottom: 15px; /* espaçamento entre o título e o conteúdo dos itens*/
+}
+
+.rodape-item p {
+    font-size: 13px;
+}
+
+.redes{
+    width: 20px;
+    padding: 0 5px; /* espaçamento entre os icones das redes sociais*/
 }
