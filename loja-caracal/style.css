@@ -30,7 +30,7 @@ padding: 25px;
 header{
     background-color: #000000; /*cor de fundo do menu*/
     opacity: 90%; /*nível de transparência da cor de fundo do menu*/
-    padding: 20px 0; /*preenchimento - top e bottom: 10px; right e leff:0px*/
+    padding: 20px 0; /*preenchimento - top e bottom: 20px; right e leff:0px*/
     position: fixed; /*deixar o header fixo ao rolar a página*/
     width: 100%; /*ocupar toda a largura disponível*/
     height: 40px; /*altura do header*/
@@ -56,7 +56,7 @@ nav li{
     text-decoration: none; /*Tirar a decoração de link*/
     font-size: 18px; /*Tamanho da fonte*/
     font-weight: bold; /*Deixar a fonte em negrito*/
-    color:#00BFFF /*Cor da fonte*/
+    color:rgb(0, 191, 255) /*Cor da fonte*/
 }
 .item_menu:hover{
     color:#ffffff /*Ao passar o mouse em um item do menu, ele ficará branco*/
@@ -153,7 +153,7 @@ li a {
 /*==========SOBRE==========*/
 
 #sobre{
-    background: #c3f3f8; /*cor de fundo*/
+    background: rgb(195, 243, 248); /*cor de fundo*/
     margin-top: 40px; /*espaçamento entre o "sobre" e "categoria"*/
     display: flex; /*Exibe os elementos como um contêiner flexível, para que todos fiquem um ao lado do outro*/
     justify-content: space-around; /*Alinhar os itens flexíveis no centro do contêiner*/
@@ -198,7 +198,7 @@ em strong{
     list-style: none; /*tira aquele pontinho de lista dos <li>*/
     text-align: center; /*deixa os elementos centralizados*/
     padding: 15px 0px; /* espaçamento do topo do rodapé até o título dos itens */ 
-    margin: 0 auto; /* não sei muito o pq, mas quando coloca margin auto para difeita e para esquerda ele centraliza*/
+    margin: 38px auto; /* não sei muito o pq, mas quando coloca margin auto para difeita e para esquerda ele centraliza*/
 }
 
 .rodape-item{
@@ -218,4 +218,38 @@ em strong{
 .redes{
     width: 20px; /*/*Largura da imagem, a altura fica proporcioal à largura*/
     padding: 0 5px; /* espaçamento entre os icones das redes sociais*/
+}
+
+/*==========FORMULÁRIO==========*/
+
+.capa-de-fundo{
+    background-image: url(img/fundo-form.jpg); /*No caso da página "CONTATO", achei legal colocar uma imagem de fundo para decorar e não ficar só o form*/
+}
+
+.formulario{
+    padding-top: 100px; /*Deixar o começo do formulário mais embaixo*/
+    display:flex;
+    justify-content: center;
+}
+
+.contato{
+    padding: 0 30px 30px 30px;
+    background-color: rgba(252, 252, 252, 0.8);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+}
+
+.campo-form{
+    padding:10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+textarea{
+    height: 150px;
 }
