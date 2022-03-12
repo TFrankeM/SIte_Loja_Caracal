@@ -56,7 +56,7 @@ nav li{
     text-decoration: none; /*Tirar a decoração de link*/
     font-size: 18px; /*Tamanho da fonte*/
     font-weight: bold; /*Deixar a fonte em negrito*/
-    color:rgb(0, 191, 255) /*Cor da fonte*/
+    color:#00bfff /*Cor da fonte*/
 }
 .item_menu:hover{
     color:#ffffff /*Ao passar o mouse em um item do menu, ele ficará branco*/
@@ -235,8 +235,7 @@ em strong{
 .contato{
     padding: 0 30px 30px 30px;
     background-color: rgba(252, 252, 252, 0.8);
-    width: 100%;
-    max-width: 500px;
+    width: 500px;
 }
 
 .form{
@@ -250,6 +249,27 @@ em strong{
     border: 1px solid black;
     border-radius: 5px;
 }
+
+.campo-form:focus{
+    background: #c3f3f8;
+}
+
+.botao-form{
+    font-size: 18px;
+    font-weight: bolder;
+    color: #ffffff;
+    background: #424b9d;
+    padding:10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px; 
+}
+
+.botao-form:hover{
+    background:#c3f3f8;
+    color:#000000;
+}   
+
 textarea{
     height: 150px;
 }
