@@ -76,6 +76,7 @@ nav li{
     letter-spacing: 5px; /*leve espaçamento entre as letras do título*/   
     font-weight: bold; /*negrito*/
     font-style: italic; /*itálico*/
+    font-size: 40px /*tamanho da fonte*/
 }
 
 .img_vitrine{
@@ -220,7 +221,54 @@ em strong{
     padding: 0 5px; /* espaçamento entre os icones das redes sociais*/
 }
 
-/*==========FORMULÁRIO==========*/
+/*==========PÁGINA EQUIPE==========*/
+
+.img_equipe{
+    width: 300px; 
+    height: 300px; /*deixa a imagem quadrada, 200x200px*/
+	border-radius: 50%; /*o arredondamento da imagem*/
+	border: 6px solid #000000; /*espessura e aspecto da borda*/
+}
+
+.membros { /*cada membro*/
+	display: inline-block; /*deixa os itens um ao lado do outro(inline) e possibilita reajustar a altura(block)*/
+	text-align: center; /*centraliza o texto e a imagem*/
+    height: 450px; /*altura de cada item*/
+	vertical-align: top; /*alinhar todos os itens pelo topo do elemento mais alto da linha*/
+	margin: 5%; /* é a margem (espaçamento) de um item ao outro*/
+	box-sizing: border-box; /*preenchimento e borda na largura e altura totais do elemento*/
+	width: 750px; /*Esse e os próximos 2 comandos servem para centralizar a seção EQUIPE*/
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.img_equipe:hover {
+	border-color:#00bfff; /*quando passar o mouse sobre as fotos, a borda ficará azul*/
+
+}
+
+.equipe h2 {
+	font-size: 25px; /*Mudando o padrão do tamanho da font*/
+	font-weight: bold; /*negrito*/
+    margin-bottom: 10px; /*Espaçamento entre o nome e a imagem do membro da equipe*/
+	font-family: 'Lato', sans-serif; /* Um espaçamento ent */
+}
+
+.cargo {
+	font-size: 18px; /*mudando o padrão do tamanho da font*/
+	margin-bottom:5px;
+}
+
+.membros-descricao {
+	font-size: 15px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify
+	
+}
+
+/*==========PÁGINA CONTATO==========*/
 
 .capa-de-fundo{
     background-image: url(img/fundo-form.jpg); /*No caso da página "CONTATO", achei legal colocar uma imagem de fundo para decorar e não ficar só o form*/
@@ -263,6 +311,7 @@ em strong{
     margin-bottom: 15px;
     border: 1px solid black;
     border-radius: 5px; 
+    cursor: pointer;
 }
 
 .botao-form:hover{
@@ -273,3 +322,4 @@ em strong{
 textarea{
     height: 150px;
 }
+
