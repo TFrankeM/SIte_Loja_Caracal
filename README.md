@@ -1,5 +1,5 @@
 <h1 align="center">Introdução à Computação - A1</h1>
-<h2 align="center">Site da Loja Caracal Esports</h2>
+<h2 align="center">Site da Loja Caracal Esportes</h2>
 
 <hr>
 
