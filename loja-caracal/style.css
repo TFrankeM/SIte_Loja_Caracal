@@ -237,7 +237,7 @@ em strong{
 	vertical-align: top; /*alinhar todos os itens pelo topo do elemento mais alto da linha*/
 	margin: 5%; /* é a margem (espaçamento) de um item ao outro*/
 	box-sizing: border-box; /*preenchimento e borda na largura e altura totais do elemento*/
-	width: 750px; /*Esse e os próximos 2 comandos servem para centralizar a seção EQUIPE*/
+	width: 900px; /*Esse e os próximos 2 comandos servem para centralizar a seção EQUIPE*/
     margin-left: auto;
     margin-right: auto; 
 }
