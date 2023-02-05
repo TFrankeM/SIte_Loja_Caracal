@@ -20,4 +20,4 @@
 
 <p> Link para o site: </p>
 
-<p align="center"> https://tfrankem.github.io/Site_Loja_Caracal/ </p>
+<p align="center">https://tfrankem.github.io/Site_Loja_Caracal/index.html</p>
