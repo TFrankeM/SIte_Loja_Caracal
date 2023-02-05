@@ -18,5 +18,6 @@
 <p align="justify"> Esse repositório armazena os arquivos do trabalho da A1 de Introdução à computação de 2022.
 </p>
 
-<p> Link para o site: https://tfrankem.github.io/Site_Loja_Caracal/
-</p>
+<p> Link para o site: </p>
+
+<p align="center"> https://tfrankem.github.io/Site_Loja_Caracal/ </p>
